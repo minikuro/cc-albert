@@ -12,7 +12,7 @@ mkdir -p $PRETRAINED_MODEL
 
 python run_pretraining.py --do_train --strategy_type=one \
   --albert_config_file=${MODEL_CONFIG}/base/config.json \
-  --num_train_epochs=3 \
+  --num_train_epochs=10 \
   --train_batch_size=10 \
   --warmup_proportion=0.1 \
   --input_files=${PROCESSED_DATA}/train.tf_record \
