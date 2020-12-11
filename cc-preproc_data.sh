@@ -4,7 +4,7 @@ export SPM_DIR="./spm"
 
 export DATA_DIR="./data"
 
-export PROCESSED_DATA="./data_prepro"
+export PROCESSED_DATA="./data_preproc"
 
 mkdir -p $PROCESSED_DATA
 
