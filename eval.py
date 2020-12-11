@@ -184,7 +184,7 @@ if FLAGS.init_checkpoint:
 
 #sys.exit(0)
 
-core_model.load_weights("pretrained_model/tf2_model.h5")
+core_model.load_weights("pretrained_models/tf2_model.h5")
 
 print("core model weights loaded")
 
