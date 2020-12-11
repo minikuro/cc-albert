@@ -1,19 +1,19 @@
 #!/bin/bash
 
-export MODEL_DIR=base
+export MODEL_DIR="./base"
 
-export PROCESSED_DATA=processed_data
+export PROCESSED_DATA="./data_prepro"
 
-export MODEL_CONFIG=model_configs
+export MODEL_CONFIG="./model_configs"
 
-export PRETRAINED_MODEL=pretrained_model
+export PRETRAINED_MODEL="./pretrained_models"
 mkdir -p $PRETRAINED_MODEL
 
 
-python run_pretraining.py --do_train --strategy_type=one-cpu \
+python run_pretraining.py --do_train --strategy_type=one \
   --albert_config_file=${MODEL_CONFIG}/base/config.json \
-  --num_train_epochs=1 \
-  --train_batch_size=1 \
+  --num_train_epochs=3 \
+  --train_batch_size=8 \
   --warmup_proportion=0.1 \
   --input_files=${PROCESSED_DATA}/train.tf_record \
   --meta_data_file_path=${PROCESSED_DATA}/train_meta_data \
