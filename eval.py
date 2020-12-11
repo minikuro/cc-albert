@@ -76,7 +76,7 @@ albert_config_file = "model_configs/base/config.json"
 
 albert_config = AlbertConfig.from_json_file(albert_config_file)
 
-meta_data_file_path = "data_prepro/train_meta_data"
+meta_data_file_path = "data_preproc/train_meta_data"
 
 """
 {

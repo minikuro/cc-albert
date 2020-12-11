@@ -2,7 +2,7 @@
 
 export MODEL_DIR="./base"
 
-export PROCESSED_DATA="./data_prepro"
+export PROCESSED_DATA="./data_preproc"
 
 export MODEL_CONFIG="./model_configs"
 
@@ -12,7 +12,7 @@ mkdir -p $PRETRAINED_MODEL
 
 python run_pretraining.py --do_train --strategy_type=one \
   --albert_config_file=${MODEL_CONFIG}/base/config.json \
-  --num_train_epochs=10 \
+  --num_train_epochs=3 \
   --train_batch_size=10 \
   --warmup_proportion=0.1 \
   --input_files=${PROCESSED_DATA}/train.tf_record \
