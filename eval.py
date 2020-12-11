@@ -12,9 +12,9 @@ import albert_model
 from albert import AlbertConfig, AlbertModel
 
 
-model_dir = "pretrained_model/"
+model_dir = "./pretrained_model/"
 
-spm_model_file="base/vocab/spm_sample.model"
+spm_model_file="./spm/spm_sample.model"
 
 
 """
