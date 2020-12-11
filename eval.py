@@ -12,7 +12,7 @@ import albert_model
 from albert import AlbertConfig, AlbertModel
 
 
-model_dir = "./pretrained_model/"
+model_dir = "./pretrained_models/"
 
 spm_model_file="./spm/spm_sample.model"
 
@@ -76,7 +76,7 @@ albert_config_file = "model_configs/base/config.json"
 
 albert_config = AlbertConfig.from_json_file(albert_config_file)
 
-meta_data_file_path = "processed_data/train_meta_data"
+meta_data_file_path = "data_prepro/train_meta_data"
 
 """
 {
